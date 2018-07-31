@@ -1,8 +1,9 @@
 function hapusSimbol(str) {
     // you can only write your code here!
-    var hapus = str.match(/[a-z, 0-9]+/gi).join('')
-    return hapus.replace(/\s/, '')
-
+    // var hapus = str.match(/[a-z, 0-9]+/gi).join('')
+    // return hapus.replace(/\s/, '')
+    var hapus = str.replace(/[^a-z,0-9]+/gi, '')
+    return hapus
   }
   
   // TEST CASES
